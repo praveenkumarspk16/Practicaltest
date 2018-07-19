@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% if request.user.username %}
+<style>
+
+    .btn.btn-success{
+
+                    position:relative;
+                    top: -52px;
+
+                    left: 220px;
+
+                    right: 20px;
+    }
+
+</style>
+
+<h3>Welcome:{{ request.user.username }}</h3>
+
+
+
+<h3><a href="/crud/index" class="btn btn-success">Index</a></h3>
+
+
+{% else %}
+
+<h3><a href="/sites/signin">Login Here</a></h3>
+
+{% endif %}
+
+{% endblock %}
