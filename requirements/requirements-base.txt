@@ -1,0 +1,1 @@
+Django>=1.10djangorestframework>=3.3
